@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="An artisan design company working with entrepreneurs and creative nine-to-fivers to create better experiences through design. Serving Northern Michigan, Central Florida, and everywhere with wifi.">
+    <meta name="keywords" content="">
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Nimble Kettle, LLC | Digital, Print, and Branding" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+  </head>
+  <body>
+    <%= partial 'partials/main-nav' %>
+    <%= yield %>
+    <%= partial 'partials/main-footer' %>
+  </body>
+</html>

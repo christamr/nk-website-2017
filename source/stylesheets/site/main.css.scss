@@ -1,3 +1,4 @@
+
 /* -- BOILERPLATE -- */
 
 body {
@@ -115,7 +116,7 @@ div.main-nav .button:hover {
 }
 
 header {
-  background-image: url("images/heading-drawing.png");
+  background-image: image-url("heading-drawing.png");
   background-size: cover;
   padding-bottom: 10px;
   z-index: -1;
@@ -138,37 +139,37 @@ header .header-description h1 {
 
 /* -- FEATURED CONTENT -- */
 
-div.featured-content {
-  background-color: #AFC639;
-  box-shadow: 1px 1px 10px rgba(124, 123, 119, 0.35);
-  padding: 30px 0;
-}
-
-div.featured-content span {
-  @include absolute();
-  display: block;
-  @include size(0);
-  background-color: $btn-color-dark;
-  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-div.featured-content a {
-  text-decoration: none;
-}
-
-div.featured-content a:active {
-  background-color: $btn-color;
-}
-
-div.featured-content a:hover {
-  color: tint($btn-color, 75%);
-}
-
-div.featured-content span {
-  @include size(225%, $btn-width*2.25);
-}
+// div.featured-content {
+//   background-color: #AFC639;
+//   box-shadow: 1px 1px 10px rgba(124, 123, 119, 0.35);
+//   padding: 30px 0;
+// }
+//
+// div.featured-content span {
+//   @include absolute();
+//   display: block;
+//   @include size(0);
+//   background-color: $btn-color-dark;
+//   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+//   transform: translate(-50%, -50%);
+//   z-index: -1;
+// }
+//
+// div.featured-content a {
+//   text-decoration: none;
+// }
+//
+// div.featured-content a:active {
+//   background-color: $btn-color;
+// }
+//
+// div.featured-content a:hover {
+//   color: tint($btn-color, 75%);
+// }
+//
+// div.featured-content span {
+//   @include size(225%, $btn-width*2.25);
+// }
 
 
 
@@ -288,19 +289,19 @@ div.core-value h3 {
 
 .secondary-content .cs1 {
   background-color: #DB583B;
-  background-image: url("images/heading-drawing.png");
+  background-image: image-url("heading-drawing.png");
   background-size: cover;
 }
 
 .secondary-content .cs2 {
   background-color: #264076;
-  background-image: url("images/heading-drawing.png");
+  background-image: image-url("heading-drawing.png");
   background-size: cover;
 }
 
 .secondary-content .cs3 {
   background-color: #00707E;
-  background-image: url("images/heading-drawing.png");
+  background-image: image-url("heading-drawing.png");
   background-size: cover;
 }
 
